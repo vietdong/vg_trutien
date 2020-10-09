@@ -8,13 +8,16 @@
   }
 .menu_right{
     background-image: url('../img/right.png');
-    width: 160px;
-    height: 363px;
+    width: 260px;
+    height: 507px;
     background-size: 100% 100%;
     position: fixed;
-    top: 30%;
+    top: 20%;
     right: 20px;
-    padding-top: 100px;
+    padding-top: 140px;
+}
+.menu_right img{
+    width: 172px;
 }
 .back_to_top{
     width: 40px;
