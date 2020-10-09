@@ -269,12 +269,13 @@ header{
 }
 .section_5 .number span{
     background-image: url('../img/bg_number.png');
-    width: 219px;
-    height: 62px;
-    font-size: 45px;
+    background-size: 100% 100%;
+    width: 180px;
+    height: 51px;
+    font-size: 40px;
     display: block;
     float: left;
-    line-height: 62px;
+    line-height: 51px;
     color: #589584;
     margin-left: 80px;
 
@@ -292,7 +293,15 @@ header{
     margin-top: 20px;
     text-align: center;
 }
-
+.list_btn a{
+    padding: 0 10px;
+}
+.list_btn a:nth-child(2){
+    margin-left: -88px;
+}
+.list_btn img{
+    width: 180px;
+}
 .btn_login{
     position: absolute;
     top: 0;
