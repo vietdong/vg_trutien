@@ -191,7 +191,7 @@ header{
 }
 .ss4_header .sl img{
     margin-top: -7px;
-    margin-left: -10px;
+    margin-left: -3px;
 }
 .ss4_header .logout{
     color: #589382;
@@ -200,7 +200,9 @@ header{
     padding-left: 20px;
     text-decoration: underline;
 }
-
+.page_2{
+    display: none;
+}
 .section_4 .box_child{
     width: 280px;
     height: 300px;
@@ -208,8 +210,15 @@ header{
     text-align: center;
     margin-bottom: 40px;
 }
+.section_4 .box_child .name_vp{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    opacity: 0.7;
+}
 .section_4 .box_child .number{
-    padding-top: 26px;
+    /* padding-top: 26px; */
+    margin-top: -20px;
 }
 .section_4 .box_child .sl{
     padding-top: 32px;
@@ -293,7 +302,7 @@ main{
     padding-bottom: 30px;
 }
 
-#rotate .modal-content,#muavatpham .modal-content,#napkimte .modal-content{
+#rotate .modal-content,#muavatpham .modal-content,#napkimte .modal-content,#muakimte .modal-content{
     background-image: url('../img/pup_rotate.png');
     width: 604px;
     height: 194px;
@@ -302,10 +311,10 @@ main{
 }
 #rotate .close{
     position: absolute;
-    top: -45px;
-    right: 2px;
+    top: -43px;
+    right: -45px;
 }
-#muavatpham .modal-content, #napkimte .modal-content{
+#muavatpham .modal-content, #napkimte .modal-content,#muakimte .modal-content{
     padding-top: 10px;
     text-align: center;
     font-size: 30px;
@@ -319,6 +328,26 @@ main{
 }
 #login .modal-content span{
     font-size: 22px;
+}
+#muakimte .modal-body{
+  padding: 0;
+}
+#muakimte .modal-content{
+   height: 272px;
+}
+.title_muakimte{
+    font-size: 32px;
+}
+#muakimte .modal-content input{
+    width: 40%;
+    height: 40px;
+}
+#muakimte .number{
+    margin-top: -10px;
+}
+#muakimte .buy{
+    width: 130px;
+    margin-top: -83px;
 }
 #login .modal-content img, #dangki .modal-content img{
     width: 145px;
@@ -346,7 +375,7 @@ main{
 }
 #history .modal-content{
     background-image: url('../img/pup_history.png');
-    height: 434px;
+    height: 464px;
     background-size: 100% 100%;
     background-color: unset;
     border: unset;
@@ -357,6 +386,7 @@ main{
     list-style: none;
     border-bottom: 1px dotted #65b5b1;
     padding: 4px 0;
+    font-size: 20px;
     
 }
 #history .modal-content ul li span:nth-child(2){
@@ -384,16 +414,47 @@ main{
 .title_box{
     position: absolute;
     text-align: center;
-    font-size: 40px;
-    top: -8px;
+    font-size: 35px;
+    top: -4px;
+    left: 0px;
     width: 100%;
     font-weight: 100;
 }
 .bg__video{
     width: 100%;
 }
+.section_2 .title_box{
+    padding: 0 20px;
+}
+.kim{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal .closed {
+    position: absolute;
+    right: -44px;
+    top: 0;
+    z-index: 90;
+    width: 44px;
+    height: 44px;
+    background: url(../img/close1.png) no-repeat;
+}
+.modal .closed:hover {
+    -webkit-animation: closeRo 0.5s linear;
+    animation: closeRo 0.5s linear;
+}
+@keyframes closeRo {
+	0% { transform: rotate(0); }
+	50% { transform: rotate(-225deg); }
+	100% { transform: rotate(0deg); }
+}
 @media only screen and (max-width: 600px) {
     .title{
         width: 100%;
+    }
+    .menu_right{
+        display: none;
     }
 }
